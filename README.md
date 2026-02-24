@@ -235,7 +235,7 @@ finance-nlp-indobert/
 |------|-------------|--------|
 | Delicia Nathania | EDA & mBert Model | [@delicia1220](https://github.com/delicia1220) |
 | Jonea Kristiawan | Decision Tree Model | [@joneakristiawan](https://github.com/joneakristiawan) |
-| Kevin Tanwiputra | SVM Model | [@TakeshiKei](https://github.com/TakeshiKei) |
+| Kevin Tanwiputra | SVM Model & Front-end | [@TakeshiKei](https://github.com/TakeshiKei) |
 | Nicholas William | EDA & XLM-RoBERTa Model | [@NicholasWilliam](https://github.com/NicholasWilliam) |
 | Rio Dwi Oktavianto | IndoBERT Model & Fine-Tuning | [@ReygaDirga](https://github.com/ReygaDirga) |
 
@@ -246,5 +246,6 @@ finance-nlp-indobert/
 - Large model files are excluded from the repository.
 - Download the main IndoBERT model before running the backend.
 - Backend must be running before starting the frontend.
+
 
 
