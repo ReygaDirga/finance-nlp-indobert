@@ -1,4 +1,4 @@
-# 📊 Finance Planning – NLP-Based Financial Text Classification
+# Finance Planning – NLP-Based Financial Text Classification
 
 A web-based personal finance management system enhanced with NLP classification using Transformer models.
 
@@ -16,7 +16,7 @@ This project consists of:
 
 ---
 
-# 🧠 Tech Stack
+# Tech Stack
 
 - Frontend: React (Vite)
 - Backend: FastAPI
@@ -26,18 +26,18 @@ This project consists of:
 
 ---
 
-# 📥 Model Downloads
+# Model Downloads
 
 Model weights are excluded from this repository due to GitHub file size limits.
 
 ---
 
-## 1️⃣ Main Production Model (Required)
+## Main Production Model (Required)
 
 This is the deployed model used by the FastAPI backend.
 
 👉 **Download IndoBERT Model:**  
-`PASTE_MAIN_INDOBERT_LINK_HERE`
+`https://drive.google.com/file/d/1Plvh-Z6boBXFqmeZDP33Q9Vu8fCdKN90/view?usp=sharing`
 
 After downloading, place the folder inside:
 
@@ -56,7 +56,7 @@ This model is required to run the backend server.
 
 ---
 
-## 2️⃣ Full Experimental Models (Optional)
+## Full Experimental Models (Optional)
 
 This archive contains all trained models used during the research phase:
 
@@ -67,7 +67,7 @@ This archive contains all trained models used during the research phase:
 - Decision Tree
 
 👉 **Download Full Experimental Models (Optional):**  
-`PASTE_FULL_MODELS_LINK_HERE`
+`https://drive.google.com/file/d/1SrOmJI1shU0lvsdTS1MA86kRHBFlgI2k/view?usp=sharing`
 
 These models are **not required** to run the web application.
 
@@ -79,13 +79,13 @@ experiments/train.ipynb
 
 ---
 
-# ⚙️ Installation & Setup
+# Installation & Setup
 
 Two terminals are required.
 
 ---
 
-## 1️⃣ Clone Repository
+## Clone Repository
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/finance-nlp-indobert.git
@@ -94,7 +94,7 @@ cd finance-nlp-indobert
 
 ---
 
-# 🖥 Backend Setup (FastAPI)
+# Backend Setup (FastAPI)
 
 ## Step 1 – Navigate to Backend
 
@@ -148,7 +148,7 @@ http://localhost:8000
 
 ---
 
-# 🌐 Frontend Setup (React + Vite)
+# Frontend Setup (React + Vite)
 
 Open a new terminal.
 
@@ -178,7 +178,7 @@ http://localhost:5173
 
 ---
 
-# 🔬 Experimental Phase
+# Experimental Phase
 
 All model training and comparative evaluation were conducted inside:
 
@@ -198,7 +198,7 @@ Only **IndoBERT** is deployed in the production backend.
 
 ---
 
-# 🏗 Project Structure
+# Project Structure
 
 ```
 finance-nlp-indobert/
@@ -220,7 +220,7 @@ finance-nlp-indobert/
 
 ---
 
-# 📊 Model Overview
+# Model Overview
 
 - Architecture: Transformer-based (IndoBERT)
 - Task: Multi-class text classification
@@ -229,20 +229,21 @@ finance-nlp-indobert/
 
 ---
 
-# 👥 Contributors
+# Contributors
 
-| Name | Contribution | GitHub |
+| Name | Contribution | GitHub Username |
 |------|-------------|--------|
-| A | EDA & XLM-RoBERTa Model | https://github.com/USERNAME_A |
-| B | EDA & mBERT Model | https://github.com/USERNAME_B |
-| C | IndoBERT Model & Fine-Tuning (Main Deployment Model) | https://github.com/USERNAME_C |
-| D | SVM Model | https://github.com/USERNAME_D |
-| E | Decision Tree Model | https://github.com/USERNAME_E |
+| Delicia Nathania | EDA & mBert Model | [@delicia1220](https://github.com/delicia1220) |
+| Jonea Kristiawan | Decision Tree Model | [@joneakristiawan](https://github.com/joneakristiawan) |
+| Kevin Tanwioutra | SVM Model | [@TakeshiKei](https://github.com/TakeshiKei) |
+| Nicholas William | EDA & XLM-RoBERTa Model | [@NicholasWilliam](https://github.com/NicholasWilliam) |
+| Rio Dwi Oktavianto | IndoBERT Model & Fine-Tuning | [@ReygaDirga](https://github.com/ReygaDirga) |
 
 ---
 
-# 📌 Notes
+# Notes
 
 - Large model files are excluded from the repository.
 - Download the main IndoBERT model before running the backend.
 - Backend must be running before starting the frontend.
+
