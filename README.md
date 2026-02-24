@@ -1,53 +1,87 @@
 # 📊 Finance Planning – NLP-Based Financial Text Classification
 
-A personal finance management web application enhanced with NLP classification using IndoBERT.  
-The system classifies Indonesian financial texts into:
+A web-based personal finance management system enhanced with NLP classification using Transformer models.
 
-- Needs
-- Wants
-- Debt
-- Invest
-- Saving
+The system classifies Indonesian financial text into five categories:
 
-## 🧠 Tech Stack
+- Needs  
+- Wants  
+- Debt  
+- Invest  
+- Saving  
+
+This project consists of:
+- **Production system** → React + FastAPI (deploying IndoBERT)
+- **Research phase** → Comparative experiments across multiple models
+
+---
+
+# 🧠 Tech Stack
 
 - Frontend: React (Vite)
 - Backend: FastAPI
-- Model: Fine-tuned IndoBERT (Transformer)
-- Language: Python & JavaScript
+- NLP Models: IndoBERT, mBERT, XLM-R, SVM, Decision Tree
+- Language: Python, JavaScript
+- Framework: PyTorch, Transformers (HuggingFace)
 
 ---
 
-# 🧠 Model Information
+# 📥 Model Downloads
 
-The trained model weights are NOT included in this repository due to GitHub file size limitations.
+Model weights are excluded from this repository due to GitHub file size limits.
 
-## 📥 Download Model
+---
 
-Download the model manually:
+## 1️⃣ Main Production Model (Required)
 
-👉 **Model Link:** `PASTE_YOUR_MODEL_LINK_HERE`
+This is the deployed model used by the FastAPI backend.
 
-After downloading, place the model folder inside:
+👉 **Download IndoBERT Model:**  
+`PASTE_MAIN_INDOBERT_LINK_HERE`
+
+After downloading, place the folder inside:
 
 ```
 finance-backend/
 ```
 
-Example:
+Expected structure:
 
 ```
 finance-backend/
-│── indobert-dataset-final/
-│── main.py
-│── models.py
+└── indobert-dataset-final/
+```
+
+This model is required to run the backend server.
+
+---
+
+## 2️⃣ Full Experimental Models (Optional)
+
+This archive contains all trained models used during the research phase:
+
+- IndoBERT (baseline & tuned)
+- mBERT
+- XLM-RoBERTa
+- SVM
+- Decision Tree
+
+👉 **Download Full Experimental Models (Optional):**  
+`PASTE_FULL_MODELS_LINK_HERE`
+
+These models are **not required** to run the web application.
+
+All comparative experiments were conducted in:
+
+```
+experiments/train.ipynb
 ```
 
 ---
 
-# ⚙️ Installation & Setup Guide
+# ⚙️ Installation & Setup
 
-You will need **two terminals**.
+Two terminals are required.
 
 ---
 
@@ -76,12 +110,12 @@ python -m venv .venv
 
 Activate:
 
-### Windows
+**Windows**
 ```bash
 .venv\Scripts\activate
 ```
 
-### Mac/Linux
+**Mac/Linux**
 ```bash
 source .venv/bin/activate
 ```
@@ -92,9 +126,9 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Step 4 – Make Sure Model Exists
+## Step 4 – Ensure Model Exists
 
-Ensure this folder exists:
+Make sure the IndoBERT model folder exists:
 
 ```
 finance-backend/indobert-dataset-final/
@@ -116,7 +150,7 @@ http://localhost:8000
 
 # 🌐 Frontend Setup (React + Vite)
 
-Open a **new terminal**.
+Open a new terminal.
 
 ## Step 1 – Navigate to Frontend
 
@@ -144,6 +178,26 @@ http://localhost:5173
 
 ---
 
+# 🔬 Experimental Phase
+
+All model training and comparative evaluation were conducted inside:
+
+```
+experiments/train.ipynb
+```
+
+Models evaluated:
+
+- IndoBERT
+- mBERT
+- XLM-RoBERTa
+- Support Vector Machine (SVM)
+- Decision Tree
+
+Only **IndoBERT** is deployed in the production backend.
+
+---
+
 # 🏗 Project Structure
 
 ```
@@ -153,12 +207,12 @@ finance-nlp-indobert/
 │   ├── main.py
 │   ├── models.py
 │   ├── schemas.py
-│   ├── requirements.txt
-│   └── indobert-dataset-final/ (model – not included)
+│   └── indobert-dataset-final/ (not included)
 │
 ├── finance-frontend/
-│   ├── src/
-│   ├── package.json
+│
+├── experiments/
+│   └── train.ipynb
 │
 ├── README.md
 └── .gitignore
@@ -168,24 +222,27 @@ finance-nlp-indobert/
 
 # 📊 Model Overview
 
-- Transformer Architecture: IndoBERT
-- Multi-class text classification
-- 5 financial categories
-- Served via REST API using FastAPI
+- Architecture: Transformer-based (IndoBERT)
+- Task: Multi-class text classification
+- Language: Indonesian
+- Deployment: REST API via FastAPI
 
 ---
 
 # 👥 Contributors
 
-| Name | Role | GitHub |
-|------|------|--------|
-| Your Name | NLP Engineer / Backend | https://github.com/YOUR_USERNAME |
-| Contributor 2 | Frontend Developer | https://github.com/USERNAME_2 |
-| Contributor 3 | Data Engineer | https://github.com/USERNAME_3 |
+| Name | Contribution | GitHub |
+|------|-------------|--------|
+| A | EDA & XLM-RoBERTa Model | https://github.com/USERNAME_A |
+| B | EDA & mBERT Model | https://github.com/USERNAME_B |
+| C | IndoBERT Model & Fine-Tuning (Main Deployment Model) | https://github.com/USERNAME_C |
+| D | SVM Model | https://github.com/USERNAME_D |
+| E | Decision Tree Model | https://github.com/USERNAME_E |
 
 ---
 
 # 📌 Notes
 
-- Model files are excluded due to size limits.
-- Make sure the backend is running before starting the frontend.
+- Large model files are excluded from the repository.
+- Download the main IndoBERT model before running the backend.
+- Backend must be running before starting the frontend.
