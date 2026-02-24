@@ -1,0 +1,58 @@
+/* src/index.css */
+
+/* ====== GLOBAL RESET + FONT (PAKSA SAMA SEMUA) ====== */
+:root {
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Noto Sans";
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.92);
+  background-color: #0b1220;
+
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* INI KUNCI: paksa semua elemen ikut font yang sama */
+*,
+*::before,
+*::after {
+  font-family: var(--font-sans) !important;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  color: inherit;
+  background: transparent;
+}
+
+/* Kalau ada CSS yang bikin heading jadi serif, override di sini */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans) !important;
+}
+
+/* controls */
+button, input, select, textarea {
+  font-family: var(--font-sans) !important;
+}
+
+/* link netral */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}

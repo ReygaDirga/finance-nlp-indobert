@@ -1,0 +1,21 @@
+# Python
+indobert-dataset-final/
+.venv/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+
+# Model
+*.pt
+*.bin
+*.ckpt
+*.h5
+*.pkl
+
+# Dataset
+*.csv
+
+# DB
+*.db
